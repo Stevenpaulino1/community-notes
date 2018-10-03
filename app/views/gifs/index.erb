@@ -1,0 +1,11 @@
+<h1>All the Gifs!</h1>
+<ul>
+  <% @gifs.each do |gif|  %>
+<li>
+  <%= gif.link %>
+  Link to the Gifs post:<%= link_to gif.name, gif_path(gif)%>
+  #but really, here we should link back to the topic it belongs to
+</li>
+    <br>
+   <% end %>
+</ul>
